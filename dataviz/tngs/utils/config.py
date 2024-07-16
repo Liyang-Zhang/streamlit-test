@@ -3,8 +3,7 @@ from typing import Dict
 import pandas as pd
 from pydantic import BaseModel
 from st_aggrid import AgGrid, GridOptionsBuilder, List
-
-from dataviz.tngs.utils.constants import RETAIN_FILTER_STATE_OPTIONS
+from utils.constants import RETAIN_FILTER_STATE_OPTIONS
 
 
 class GridOptionsBuilderConfig(BaseModel):

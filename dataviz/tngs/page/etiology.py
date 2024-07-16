@@ -1,11 +1,10 @@
 import pandas as pd
 import streamlit as st
+from page.sample import _load_sample_sheet
 from st_aggrid import GridOptionsBuilder, JsCode
-
-from dataviz.tngs.page.sample import _load_sample_sheet
-from dataviz.tngs.utils.config import AgGridConfig, GridOptionsBuilderConfig
-from dataviz.tngs.utils.constants import ETIOLOGY_COLUMNS, ETIOLOGY_DTYPE, LICENSE_KEY
-from dataviz.tngs.utils.plot import sample_etiology_heatmap
+from utils.config import AgGridConfig, GridOptionsBuilderConfig
+from utils.constants import ETIOLOGY_COLUMNS, ETIOLOGY_DTYPE, LICENSE_KEY
+from utils.plot import sample_etiology_heatmap
 
 # Initialize session state for dataframes
 session_state_keys = [

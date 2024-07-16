@@ -2,10 +2,9 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from st_aggrid import GridOptionsBuilder, JsCode
-
-from dataviz.tngs.utils.config import AgGridConfig, GridOptionsBuilderConfig
-from dataviz.tngs.utils.constants import LICENSE_KEY, SAMPLE_COLUMNS, SAMPLE_DTYPE
-from dataviz.tngs.utils.plot import plot_histogram, plot_pie_chart, plot_wordcloud
+from utils.config import AgGridConfig, GridOptionsBuilderConfig
+from utils.constants import LICENSE_KEY, SAMPLE_COLUMNS, SAMPLE_DTYPE
+from utils.plot import plot_histogram, plot_pie_chart, plot_wordcloud
 
 # Initialize session state for dataframes
 session_state_keys = [
